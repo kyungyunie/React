@@ -1,0 +1,35 @@
+/* 전체 페이지 배경 색 추가 */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #ffebf0; /* ✅ 연한 핑크 배경 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* ✅ 화면 전체 높이 */
+  margin: 0;
+}
+
+/* To-Do 리스트 컨테이너 */
+.container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 520px; /* 📌 하얀색 박스를 조금 더 넓힘 */
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* ✅ 위쪽 정렬 유지 */
+  box-sizing: border-box; /* ✅ 패딩 포함 크기 유지 */
+}
+
+/* ✅ 통계값(전체, 진행중, 완료)을 가로 정렬 */
+.statsContainer {
+  display: flex; /* 가로 정렬 */
+  justify-content: center; /* 가운데 정렬 */
+  align-items: center;
+  gap: 15px; /* 각 항목 간격 조정 */
+  flex-wrap: wrap; /* 화면이 작아질 경우 줄바꿈 가능 */
+}
