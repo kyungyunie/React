@@ -13,9 +13,12 @@
 
       <!-- 통계 정보 (할 일 개수) -->
       <div class="stats-container">
-        <p>전체: <span id="total-count">0</span></p> <!-- 전체 할 일 개수 -->
-        <p>진행중: <span id="active-count">0</span></p> <!-- 진행 중인 할 일 개수 -->
-        <p>완료: <span id="completed-count">0</span></p> <!-- 완료된 할 일 개수 -->
+        <p>전체: <span id="total-count">0</span></p>
+        <!-- 전체 할 일 개수 -->
+        <p>진행중: <span id="active-count">0</span></p>
+        <!-- 진행 중인 할 일 개수 -->
+        <p>완료: <span id="completed-count">0</span></p>
+        <!-- 완료된 할 일 개수 -->
       </div>
 
       <!-- 할 일 입력 필드 및 추가 버튼 -->
@@ -26,7 +29,8 @@
           placeholder="할 일을 입력하세요"
           maxlength="50"
         />
-        <button id="add-button">+</button> <!-- 할 일을 추가하는 버튼 -->
+        <button id="add-button">+</button>
+        <!-- 할 일을 추가하는 버튼 -->
       </div>
 
       <!-- 입력한 문자 개수 표시 -->
@@ -34,9 +38,14 @@
 
       <!-- 필터 버튼 (전체 / 진행중 / 완료) -->
       <div class="filter-container">
-        <button class="all" onclick="filterTodos('all')">전체</button> <!-- 모든 할 일 보기 -->
-        <button class="active" onclick="filterTodos('active')">진행중</button> <!-- 진행 중인 할 일만 보기 -->
-        <button class="completed" onclick="filterTodos('completed')">완료</button> <!-- 완료된 할 일만 보기 -->
+        <button class="all" onclick="filterTodos('all')">전체</button>
+        <!-- 모든 할 일 보기 -->
+        <button class="active" onclick="filterTodos('active')">진행중</button>
+        <!-- 진행 중인 할 일만 보기 -->
+        <button class="completed" onclick="filterTodos('completed')">
+          완료
+        </button>
+        <!-- 완료된 할 일만 보기 -->
       </div>
 
       <!-- 할 일 목록이 표시될 공간 -->
