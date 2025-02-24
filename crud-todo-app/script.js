@@ -96,7 +96,9 @@ function filterTodos(status) {
 // 통계 정보 업데이트 함수
 function updateStats() {
   const totalCount = document.querySelectorAll("#todo-list li").length; // 전체 할 일 개수
-  const completedCount = document.querySelectorAll("#todo-list li.completed").length; // 완료된 할 일 개수
+  const completedCount = document.querySelectorAll(
+    "#todo-list li.completed"
+  ).length; // 완료된 할 일 개수
   const activeCount = totalCount - completedCount; // 진행중인 할 일 개수
 
   document.getElementById("total-count").textContent = totalCount;
@@ -115,8 +117,10 @@ function updateCharCount() {
 document.getElementById("add-button").addEventListener("click", addTodo);
 
 // Enter 키 입력 시 새로운 할 일 추가
-document.getElementById("todo-input").addEventListener("keypress", function (event) {
-  if (event.key === "Enter") {
-    addTodo();
-  }
-});
+document
+  .getElementById("todo-input")
+  .addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+      addTodo();
+    }
+  });
