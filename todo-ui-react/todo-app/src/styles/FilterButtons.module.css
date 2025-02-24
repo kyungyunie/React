@@ -1,0 +1,38 @@
+/* ✅ 버튼 컨테이너 (버튼을 가로로 배치) */
+.filterContainer {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* 버튼 간격 키우기 */
+  margin: 20px 0;
+}
+
+/* ✅ 공통 버튼 스타일 */
+.filterButton {
+  padding: 12px 24px; /* 버튼 크기 키우기 */
+  font-size: 16px; /* 글자 크기 키우기 */
+  font-weight: bold; /* 글자 굵게 */
+  border: none;
+  border-radius: 25px; /* ✅ 모서리 둥글게 */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: white;
+}
+
+/* ✅ 각 버튼 별 색상 */
+.all {
+  background: #74b9ff;
+}
+
+.active {
+  background: #55efc4;
+}
+
+.completed {
+  background: #d8b4f8;
+}
+
+/* ✅ 버튼 호버 효과 */
+.filterButton:hover {
+  transform: scale(1.1); /* 살짝 커지는 효과 */
+  opacity: 0.9;
+}
