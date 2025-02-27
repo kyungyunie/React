@@ -1,0 +1,35 @@
+/* 전체 페이지 배경 색 설정 */
+body {
+  font-family: "Arial", sans-serif; /* 기본 폰트 설정 */
+  background-color: #ffebf0; /* 연한 핑크 배경 적용 */
+  display: flex; /* 화면 가운데 정렬을 위해 flexbox 사용 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  height: 100vh; /* 화면 전체 높이 설정 */
+  margin: 0; /* 기본 마진 제거 */
+}
+
+/* To-Do 리스트 컨테이너 스타일 */
+.container {
+  background: #ffffff; /* 흰색 배경 */
+  padding: 30px; /* 내부 여백 설정 */
+  border-radius: 20px; /* 모서리 둥글게 */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  text-align: center; /* 내부 요소 가운데 정렬 */
+  width: 520px; /* 컨테이너의 너비 설정 */
+  min-height: 600px; /* 최소 높이 설정 */
+  display: flex; /* 내부 요소 배치를 위한 flexbox 사용 */
+  flex-direction: column; /* 요소들을 세로로 정렬 */
+  align-items: center; /* 내부 요소 가운데 정렬 */
+  justify-content: flex-start; /* 상단 정렬 유지 */
+  box-sizing: border-box; /* 패딩 포함한 크기 유지 */
+}
+
+/* 통계값(전체, 진행중, 완료) 스타일 설정 */
+.statsContainer {
+  display: flex; /* 가로 정렬 */
+  justify-content: center; /* 가운데 정렬 */
+  align-items: center; /* 세로 정렬 */
+  gap: 15px; /* 항목 간 간격 조정 */
+  flex-wrap: wrap; /* 화면 크기가 작아질 경우 줄바꿈 가능 */
+}

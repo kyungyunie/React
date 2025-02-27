@@ -1,0 +1,5 @@
+/* 할 일 목록 스타일 */
+.todoList {
+  list-style: none; /* 기본 목록 스타일 제거 */
+  padding: 0; /* 기본 패딩 제거 */
+}
