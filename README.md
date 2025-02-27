@@ -7,7 +7,7 @@
 ---
 ## 📂 프로젝트 목록
 
-### 1️⃣ [CRUD Todo App](./crud-todo-app)
+### 1️⃣ [CRUD Todo](./crud-todo)
 > **기술 스택:** `HTML` `CSS` `JavaScript`
 
 ✅ **주요 기능**  
