@@ -1,4 +1,4 @@
-import useTodos from "./hooks/useTodos"; // Custom Hook 가져오기
+import useTodos from "./hook/useTodo"; // Custom Hook 가져오기
 import TodoInput from "./components/TodoInput";
 import TodoList from "./components/TodoList";
 import FilterButtons from "./components/FilterButtons";
