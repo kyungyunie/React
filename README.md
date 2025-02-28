@@ -24,7 +24,7 @@ HTML, CSS, JavaScript를 활용하여 기본적인 CRUD 기능을 구현한 Todo
 
 ---
 
-### 2️⃣ [React Todo UI](./todo-ui-react)
+### 2️⃣ [Todo UI React](./todo-ui-react)
 > **기술 스택:** `React` `CSS Modules`
 
 ✅ **주요 기능**  
@@ -39,4 +39,19 @@ HTML, CSS, JavaScript를 활용하여 기본적인 CRUD 기능을 구현한 Todo
 기존의 HTML/CSS/JS 기반의 Todo 리스트를 React를 활용하여 재구성한 프로젝트입니다. 
 컴포넌트 기반 아키텍처를 적용하여 유지보수성을 향상시키고, CSS Modules을 도입하여 스타일 충돌을 방지했습니다.
 
+---
+
+## 3️⃣ [Custom Hook Todo](./custom-hook-todo)
+> **기술 스택:** `React` `Custom Hook` `LocalStorage`
+
+✅ **주요 기능**  
+✔ `useTodo.js` Custom Hook을 활용하여 상태 관리 로직을 분리  
+✔ `useState`와 `useEffect`를 사용하여 할 일 목록을 관리 및 로컬 스토리지 연동  
+✔ 할 일 추가, 삭제, 수정, 완료 기능을 Custom Hook 내부에서 처리  
+✔ 필터 기능(전체, 진행 중, 완료)을 Custom Hook에서 구현하여 재사용성 증가  
+✔ `useTodos`에서 상태와 기능을 제공하고, `App.js`에서는 UI 로직만 처리하도록 개선  
+
+📌 **설명:**  
+React의 Custom Hook을 활용하여 Todo 리스트의 상태 관리 로직을 분리한 프로젝트입니다.  
+로컬 스토리지를 연동하여 새로고침 시 데이터가 유지되며, 필터 기능을 Custom Hook 내부에서 처리하여 코드의 재사용성을 높였습니다.
 
