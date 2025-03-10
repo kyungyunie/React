@@ -65,12 +65,10 @@ React의 Custom Hook을 활용하여 Todo 리스트의 상태 관리 로직을 �
 ✔ 작업(Work) & 여행(Travel) 모드 선택 기능  
 ✔ 전체/진행 중/완료 필터링 기능  
 ✔ `KeyboardAvoidingView` 및 `TouchableWithoutFeedback`을 활용한 입력 UX 개선  
-✔ **할 일이 많아도 확인할 수 있도록 스크롤 기능 지원 (`ScrollView` 적용)**  
+✔ 할 일이 많아도 확인할 수 있도록 스크롤 기능 지원 (`ScrollView` 적용) 
 
 📌 **설명:**  
-React Native와 Expo를 활용하여 모바일 환경에서도 할 일을 쉽게 관리할 수 있도록 구현한 Todo 앱입니다.  
-캘린더를 연동하여 날짜별로 할 일을 등록할 수 있으며, `AsyncStorage`를 활용하여 앱을 종료해도 데이터가 유지됩니다.  
-또한 `Work`와 `Travel` 모드를 선택하여 사용자가 할 일을 분류할 수 있도록 기능을 추가하였습니다.  
-스크롤이 가능한 `ScrollView`를 적용하여 많은 할 일 목록을 쉽게 확인할 수 있습니다. 🚀  
+React Native와 Expo를 활용해 날짜별 할 일을 관리할 수 있는 Todo 앱입니다.  
+`AsyncStorage`를 사용해 데이터를 로컬에 저장하며, `Work`와 `Travel` 모드를 지원해 할 일을 구분할 수 있습니다. 
 
 
