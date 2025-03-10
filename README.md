@@ -55,6 +55,8 @@ HTML, CSS, JavaScript를 활용하여 기본적인 CRUD 기능을 구현한 Todo
 React의 Custom Hook을 활용하여 Todo 리스트의 상태 관리 로직을 분리한 프로젝트입니다.  
 로컬 스토리지를 연동하여 새로고침 시 데이터가 유지되며, 필터 기능을 Custom Hook 내부에서 처리하여 코드의 재사용성을 높였습니다.
 
+---
+
 ### 4️⃣ [React Native Todo](./react-native-todo)  
 > **기술 스택:** `React Native` `AsyncStorage` `Expo` `React Native Calendars`
 
