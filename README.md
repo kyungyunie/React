@@ -34,7 +34,7 @@ HTML, CSS, JavaScript를 활용하여 기본적인 CRUD 기능을 구현한 Todo
 
 ---
 
-## 3️⃣ [Custom Hook Todo](./custom-hook-todo)
+### 3️⃣ [Custom Hook Todo](./custom-hook-todo)
 > **기술 스택:** `React` `Custom Hook` `LocalStorage`
 
 ✅ **주요 기능**  
