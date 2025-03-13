@@ -66,4 +66,25 @@ React의 Custom Hook을 활용하여 Todo 리스트의 상태 관리 로직을 �
 React Native와 Expo를 활용해 날짜별 할 일을 관리할 수 있는 Todo 앱입니다.  
 `AsyncStorage`를 사용해 데이터를 로컬에 저장하며, `Work`와 `Travel` 모드를 지원해 할 일을 구분할 수 있습니다. 
 
+---
+
+### 5️⃣ [React Native Weather App](./react-native-weather)  
+> **기술 스택:** `React Native` `Expo` `AsyncStorage` `Axios` `OpenWeather API` `Moment.js`
+
+✅ **주요 기능**  
+✔ **자동 완성 검색 기능** (입력한 글자가 포함된 도시 추천)  
+✔ **한글 → 영어 변환 검색 지원** (한국 & 해외 도시 검색 가능)  
+✔ **나라별 시간대 반영** 및 **현재 시간 기준 정렬된 시간별 예보 제공**  
+✔ **5일간의 날씨 예보** (최고/최저 기온 계산 및 표시)  
+✔ **날씨 상태별 UI 변경** (배경색 & 날씨 이모티콘 적용)  
+✔ `AsyncStorage` 활용해 최근 검색한 도시 저장  
+✔ `KeyboardAvoidingView` 및 `TouchableWithoutFeedback`으로 UX 개선  
+
+📌 **설명:**  
+React Native와 OpenWeather API를 활용한 실시간 날씨 앱입니다.
+검색한 도시의 **시간대를 반영한 시간별 예보**와 **5일간의 날씨 예보**를 제공합니다.
+날씨 상태에 따라 **배경색과 이모티콘이 변경**되며, 최근 검색한 도시를 `AsyncStorage`에 저장할 수 있습니다.
+
+
+
 
