@@ -1,0 +1,107 @@
+/* 전체 할 일 목록을 감싸는 컨테이너 */
+/* 입력창 + 추가 버튼이 포함된 컨테이너와 크기를 동일하게 설정 */
+.todoWrapper {
+  width: 100%; /* 부모 요소의 전체 너비 사용 */
+  max-width: 100%; /* 입력창과 버튼을 포함한 박스 크기와 동일하게 설정 */
+  display: flex; /* 가로 정렬을 위한 flex 사용 */
+  justify-content: center; /* 중앙 정렬 */
+}
+
+/* 개별 할 일 항목 스타일 */
+/* 입력창과 버튼이 포함된 컨테이너와 동일한 크기로 맞춤 */
+.todoItem {
+  background: #ffdde1; /* 연한 핑크색 배경 */
+  padding: 15px; /* 내부 여백 설정 */
+  border-radius: 10px; /* 모서리를 둥글게 설정 */
+  display: flex; /* 가로 정렬 */
+  align-items: center; /* 요소들을 세로 중앙 정렬 */
+  justify-content: space-between; /* 요소들을 양쪽 정렬 */
+  width: 100%; /* 부모 컨테이너 크기만큼 늘림 */
+  max-width: 520px; /* 하얀색 박스 크기와 동일하게 설정 */
+  min-width: 100%; /* 글씨가 짧아도 박스가 유지되도록 설정 */
+  min-height: 80px; /* 높이를 늘려 박스를 안정적으로 보이게 설정 */
+  box-sizing: border-box; /* 패딩과 테두리를 포함한 크기 유지 */
+  margin: 12px 0; /* 위아래 여백 조정 */
+  flex-grow: 1; /* 부모 크기에 맞춰 늘어나도록 설정 */
+}
+
+/* 체크박스와 텍스트를 같은 줄에 배치하는 컨테이너 */
+.todoContent {
+  display: flex; /* 가로 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  flex-grow: 1; /* 텍스트 영역이 가변적으로 크기를 차지하도록 설정 */
+  min-width: 0; /* 요소가 줄어들 때 최소 너비를 0으로 설정 */
+}
+
+/* 체크박스 크기 조정 */
+.checkbox {
+  transform: scale(1.2); /* 크기를 기존보다 1.2배 확대 */
+  margin-right: 12px; /* 체크박스와 텍스트 사이 간격 조정 */
+}
+
+/* 할 일 텍스트 스타일 */
+/* 길이에 따라 자동 조절하면서 일정한 크기를 유지 */
+.todoText {
+  flex-grow: 1; /* 빈 공간을 차지하도록 설정 */
+  white-space: nowrap; /* 한 줄 유지 (줄바꿈 방지) */
+  overflow: hidden; /* 넘치는 텍스트 숨김 */
+  text-overflow: ellipsis; /* 넘칠 경우 '...' 표시 */
+  font-size: 16px; /* 글자 크기 설정 */
+  min-width: 250px; /* 짧은 글씨일 때도 일정한 너비 확보 */
+  line-height: 1.5; /* 줄 간격 조정 */
+}
+
+/* 버튼 컨테이너 스타일 */
+/* 버튼들을 오른쪽 정렬 */
+.buttonContainer {
+  display: flex; /* 가로 정렬 */
+  gap: 8px; /* 버튼 간격 조정 */
+  flex-shrink: 0; /* 버튼 크기가 줄어들지 않도록 설정 */
+  min-width: 140px; /* 최소 너비 설정 */
+  justify-content: flex-end; /* 버튼을 오른쪽으로 정렬 */
+}
+
+/* 버튼 기본 스타일 설정 */
+.editButton,
+.deleteButton,
+.cancelButton {
+  font-size: 14px; /* 글자 크기 설정 */
+  padding: 6px 12px; /* 내부 여백 설정 */
+  border-radius: 6px; /* 모서리를 둥글게 설정 */
+  cursor: pointer; /* 마우스를 올리면 클릭 가능하도록 설정 */
+  flex-shrink: 0; /* 버튼 크기가 줄어들지 않도록 설정 */
+}
+
+/* 수정 버튼 스타일 */
+.editButton {
+  background: #ffbe76; /* 주황색 배경 */
+  border: none; /* 테두리 제거 */
+  color: white; /* 글자색을 흰색으로 설정 */
+}
+
+/* 삭제 버튼 스타일 */
+.deleteButton {
+  background: #ff7979; /* 빨간색 배경 */
+  border: none; /* 테두리 제거 */
+  color: white; /* 글자색을 흰색으로 설정 */
+}
+
+/* 취소 버튼 스타일 */
+.cancelButton {
+  background: #dcdcdc; /* 회색 배경 */
+  border: none; /* 테두리 제거 */
+  color: black; /* 글자색을 검정으로 설정 */
+}
+
+/* 완료된 할 일 스타일 */
+/* 배경색과 글자색 변경 */
+.completed {
+  background: #d4edda !important; /* 연한 초록색 배경 */
+  color: gray; /* 완료된 항목의 글자색 변경 */
+}
+
+/* 완료된 항목의 텍스트 스타일 */
+/* 텍스트에 취소선을 적용 */
+.completed .todoText {
+  text-decoration: line-through;
+}

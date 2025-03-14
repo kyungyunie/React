@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KYUNGYUNIE TODO</title>
+    <link rel="stylesheet" href="style.css" /> <!-- 외부 CSS 파일 연결 -->
+  </head>
+  <body>
+    <div class="container"> <!-- 전체 레이아웃을 감싸는 컨테이너 -->
+      <h1>To-Do List 📝</h1> <!-- 제목 -->
+
+      <div class="stats-container"> <!-- 할 일 통계 정보 영역 -->
+        <p>📌 전체: <span id="total-count">0</span></p> <!-- 전체 할 일 개수 표시 -->
+        <p>⏳ 진행중: <span id="active-count">0</span></p> <!-- 진행 중인 할 일 개수 표시 -->
+        <p>✅ 완료: <span id="completed-count">0</span></p> <!-- 완료된 할 일 개수 표시 -->
+      </div>
+
+      <div class="input-container"> <!-- 할 일 입력 영역 -->
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="할 일을 입력하세요"
+          maxlength="50" /> <!-- 입력할 수 있는 최대 문자 길이 제한 -->
+        <button id="add-button">+</button> <!-- 할 일 추가 버튼 -->
+      </div>
+      <p id="char-count">0 / 50</p> <!-- 입력된 문자 수 표시 -->
+
+      <div class="filter-container"> <!-- 필터 버튼 영역 -->
+        <button class="all" onclick="filterTodos('all')">전체</button> <!-- 전체 보기 필터 -->
+        <button class="active" onclick="filterTodos('active')">진행중</button> <!-- 진행 중인 할 일만 보기 필터 -->
+        <button class="completed" onclick="filterTodos('completed')">
+          완료
+        </button> <!-- 완료된 할 일만 보기 필터 -->
+      </div>
+
+      <ul id="todo-list"></ul> <!-- 할 일 목록이 표시될 영역 -->
+    </div>
+    <script src="script.js"></script> <!-- 외부 JavaScript 파일 연결 -->
+  </body>
+</html>

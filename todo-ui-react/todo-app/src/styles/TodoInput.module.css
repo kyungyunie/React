@@ -1,0 +1,58 @@
+/* 입력 컨테이너 */
+/* 입력 필드와 추가 버튼을 감싸는 영역 */
+.inputContainer {
+  display: flex; /* 가로 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  gap: 10px; /* 입력 필드와 버튼 사이 간격 설정 */
+  margin-top: 10px; /* 상단 여백 추가 */
+  padding: 10px; /* 내부 여백 설정 */
+  border-radius: 10px; /* 컨테이너 모서리를 둥글게 설정 */
+  background-color: white; /* 배경색을 흰색으로 설정 */
+  width: 100%; /* 부모 컨테이너의 전체 크기 유지 */
+  max-width: 480px; /* 최대 너비 설정 (핑크색 박스 크기와 동일하게 조정) */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 효과 추가 */
+}
+
+/* 입력 필드 */
+/* 사용자가 할 일을 입력하는 텍스트 필드 */
+.input {
+  flex-grow: 1; /* 가변적으로 너비를 조절하여 공간을 최대로 활용 */
+  padding: 12px; /* 내부 여백 설정 */
+  border-radius: 10px; /* 모서리를 둥글게 설정 */
+  border: 2px solid #ff6b81; /* 테두리 색상 설정 */
+  font-size: 16px; /* 글자 크기 설정 */
+  outline: none; /* 포커스 시 기본 테두리 제거 */
+  width: 100%; /* 부모 컨테이너 크기에 맞춰 입력 필드 크기 조정 */
+}
+
+/* 입력 필드 포커스 효과 */
+/* 사용자가 입력 필드를 클릭했을 때 스타일 변경 */
+.input:focus {
+  border-color: #ff4757; /* 포커스 시 테두리 색상 변경 */
+  box-shadow: 0px 0px 5px rgba(255, 107, 129, 0.5); /* 부드러운 빛 효과 추가 */
+}
+
+/* 추가 버튼 */
+/* 입력한 할 일을 리스트에 추가하는 버튼 */
+.addButton {
+  background: #ff6b81; /* 기본 배경색 설정 */
+  color: white; /* 글자색을 흰색으로 설정 */
+  border: none; /* 기본 테두리 제거 */
+  padding: 12px; /* 내부 여백 설정 */
+  border-radius: 50%; /* 원형 버튼으로 설정 */
+  font-size: 18px; /* 버튼 글자 크기 설정 */
+  width: 45px; /* 버튼 크기 설정 */
+  height: 45px; /* 버튼 높이 설정 */
+  display: flex; /* 중앙 정렬을 위해 flex 사용 */
+  align-items: center; /* 수직 중앙 정렬 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  cursor: pointer; /* 마우스를 올리면 포인터 커서로 변경 */
+  transition: background 0.2s, transform 0.1s; /* 부드러운 색상 변경 및 크기 조정 효과 */
+}
+
+/* 추가 버튼 호버 효과 */
+/* 마우스를 올렸을 때 스타일 변경 */
+.addButton:hover {
+  background: #ff4757; /* 더 진한 빨간색으로 변경 */
+  transform: scale(1.1); /* 버튼 크기를 살짝 확대 */
+}
